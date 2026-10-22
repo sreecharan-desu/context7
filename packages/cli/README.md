@@ -89,6 +89,9 @@ ctx7 setup --copilot
 # Use an existing API key instead of OAuth
 ctx7 setup --api-key YOUR_API_KEY
 
+# The same key from the environment skips the browser login (CI, containers, SSH)
+CONTEXT7_API_KEY=YOUR_API_KEY ctx7 setup --claude --yes
+
 # Use OAuth endpoint (IDE handles auth flow)
 ctx7 setup --oauth
 
